@@ -1,0 +1,203 @@
+* {
+   box-sizing: border-box;
+}
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   color: #dddddd ;
+   background-color: rgba(0,0,0,.70);
+   background-image: url("/main_visual.png");
+
+}
+
+header {
+   padding: 50px 4% 10px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   background-color: rgba(255,255,255,.85);
+   display: flex;
+   align-items: center;
+   z-index: 10;
+   font-size: 30px;
+}
+
+
+
+
+h1 {
+   margin: 0; padding: 0;
+   font-size: 30px;
+}
+
+a {
+   text-decoration: none;
+   color: #4b4b4b;
+}
+nav {
+   margin: 0 0 0 auto;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   display: flex;
+}
+li {
+   margin: 0 0 0 15px;
+   font-size: 18px;
+}
+
+
+.main-visual {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+
+   background-image: url("/main_visual.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   position: relative;
+   z-index: 0;
+
+}
+
+.main-visual::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: inherit;
+filter: brightness(25%);
+/* 最背面へ */
+z-index: -1;
+}
+
+.main-visual h2 {
+   margin: 0;
+   font-size: 30px;
+   font-weight: normal;
+   color: #fff;
+}
+
+
+
+.all {
+
+   display: ;
+   justify-content: ;
+   align-items: center;
+   height: ;
+
+   background-image: url("/main_visual.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   position: relative;
+   z-index: 0;
+}
+.all::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 105%;
+background: inherit;
+filter: brightness(25%);
+/* 最背面へ */
+z-index: -1;
+}
+
+h3 {
+  position: relative;
+  padding: 1.5rem 2rem;
+  color: #fff;
+  border-radius: 10px;
+  background: #094;
+}
+
+h3:after {
+  position: absolute;
+  bottom: -9px;
+  left: 1em;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  border-color: #094 transparent transparent transparent;
+}
+
+.all {
+
+}
+
+.header{
+  height: 90px;
+}
+
+.main{
+  margin: 50px 100px 0px 100px ;
+  padding: 50px 50px 50px 50px ;
+  background-color: rgba(0,0,0,.25);
+
+}
+
+.section{
+  margin: 0px 0px 0px 0px ;
+  padding: 10px 10px 10px 10px ;
+  background-color: rgba(0,0,0,.25);
+}
+
+.footer{
+  margin: 0px 100px 50px 100px ;
+  padding: 15px 0px 0px 0px ;
+  height: 50px;
+  background-color: rgba(0,0,32,.85);
+  text-align: center;
+}
+
+.{}
+
+
+
+.gallery{
+
+}
+
+
+
+
+figure {
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 5px 5px 5px 5px ;
+  float:left;
+}
+figcaption {
+  position: absolute;
+  padding: 0px 0px 0px 0px ;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right:0;
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  background: rgba(0,0,0,.7);
+  -webkit-transition: .3s;
+  opacity: 0;
+
+  display: flex;
+　align-items: center;
+　text-align: center;
+
+}
+figure:hover figcaption {
+  opacity: 1;
+  transition:all 0.3s ease;
+}
